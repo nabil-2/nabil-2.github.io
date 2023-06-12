@@ -6,10 +6,10 @@
         "description": "A library for training and testing a user-definded Convolutional Neuronal Network model, capable of all common techniques for supervised image classification and image preprocessing."
     },
     {
-        "name": "AI for Anomaly Detection",
-        "img": "ai_anomaly_detection.png",
-        "url": "anomaly-detection",
-        "description": "An AI for anomaly detection in particle physics to recognize possible beyond Standard Model events when colliding hadrons (currently working on)."
+        "name": "Search for Dark Matter",
+        "img": "dark_matter.jpeg",
+        "url": "dark-matter-search",
+        "description": "A Search for Dark Matter utilizing Artificial Intelligence and a High-Frequency Cavit"
     },
     {
         "name": "Research",
