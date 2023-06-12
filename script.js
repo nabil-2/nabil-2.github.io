@@ -62,8 +62,7 @@ const init = async ()=> {
         $('#tiles div.project:last-child').css({
             'background-image': `url('./img/${project.img}')`
         }).on('click', x=> {
-            $('body').append(`<a id="redirect" href="${project.url}" />`);
-            $('#redirect').get(0).click();
+            window.location.href = project.url;
         }).children('p').css({
             height: 0,
             "font-size": 0,
