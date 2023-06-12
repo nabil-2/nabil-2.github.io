@@ -9,8 +9,8 @@ const getProjects = ()=> {
         {
             "name": "Search for Dark Matter",
             "img": "dark_matter.jpeg",
-            "url": "dark-matter-search",
-            "description": "A Search for Dark Matter utilizing Artificial Intelligence and a High-Frequency Cavit"
+            "url": "https://aiax1.github.io/",
+            "description": "A Search for Dark Matter utilizing Artificial Intelligence and by building a High-Frequency Cavity"
         },
         {
             "name": "Research",
@@ -34,7 +34,7 @@ const getProjects = ()=> {
             "name": "Web Development",
             "img": "web_dev.png",
             "url": "http://salama-art.de/en",
-            "description": "Developing a <a href='http://salama-art.de/en'>personal website</a> (see footer) or a website for a <a href='./newspaper'>school newspaper</a>."
+            "description": "Developing a <a href='http://salama-art.de/en'>personal website</a> (see footer) or a website for a <a href='./newspaper'>school newspaper</a> as well as this very site."
         }
     ]`;
     return new Promise((resolve, reject)=> {
