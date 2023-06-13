@@ -9,7 +9,7 @@ const getProjects = ()=> {
         {
             "name": "Search for Dark Matter",
             "img": "dark_matter.jpeg",
-            "url": "https://aiax1.github.io/",
+            "url": "https://www.isa.uni-hamburg.de/studentischeforschungsgruppen/dunkle-materie.html",
             "description": "A Search for Dark Matter utilizing Artificial Intelligence and by building a High-Frequency Cavity"
         },
         {
