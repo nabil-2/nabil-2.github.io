@@ -1,28 +1,10 @@
 const getProjects = ()=> {
     return `[
         {
-            "name": "Computer Vision Library<br>& Image Recognition",
-            "img": "computer_vision.png",
-            "url": "computer-vision",
-            "description": "A library for training and testing a user-definded Convolutional Neuronal Network model, capable of all common techniques for supervised image classification and image preprocessing."
-        },
-        {
             "name": "Search for Dark Matter",
-            "img": "dark_matter.jpeg",
+            "img": "dark_matter_uhh.jpg",
             "url": "https://www.isa.uni-hamburg.de/studentischeforschungsgruppen/dunkle-materie.html",
-            "description": "A Search for Dark Matter utilizing Artificial Intelligence and by building a High-Frequency Cavity"
-        },
-        {
-            "name": "Research",
-            "img": "research.png",
-            "url": "research",
-            "description": "Developing a new type of a storage space efficient neural network by decreasing unnecessary performance by calculating weights at runtime using a “weight function” instead of saving them. Achieving about 90% less storage and 10% higher error (depending on model)."
-        },
-        {
-            "name": "Simulation of a Pandemic",
-            "img": "simulation.png",
-            "url": "simulation",
-            "description": "A complex reconstruction of a pandemic as Web-App using real-world actions measured by comparing plots to mathematical models."
+            "description": "A Search for Dark Matter by building a High-Frequency Cavity and utilizing Artificial Intelligence. A student research project funded by the University of Hamburg with 10,000 €. <br><br><span id='small_dscr'>Funded by the Federal Ministry of Education and Research (BMBF) and the Free and Hanseatic City of Hamburg under the Excellence Strategy of the Federal Government and the Federal States</span>"
         },
         {
             "name": "Android App",
@@ -31,28 +13,34 @@ const getProjects = ()=> {
             "description": "A calculator for various linear- and vector algebra operations, e.g. calculating a linear combination in n-dimensional space, vector operations, calculating the determinant, etc."
         },
         {
+            "name": "Computer Vision Library<br>& Image Recognition",
+            "img": "computer_vision.png",
+            "url": "computer-vision",
+            "description": "A library for training and testing a user-definded Convolutional Neuronal Network model, capable of all common techniques for supervised image classification and image preprocessing."
+        },
+        {
+            "name": "Simulation of a Pandemic",
+            "img": "simulation.png",
+            "url": "simulation",
+            "description": "A complex reconstruction of a pandemic as Web-App using real-world actions measured by comparing plots to mathematical models."
+        },
+        {
+            "name": "AI Research",
+            "img": "research.png",
+            "url": "research",
+            "description": "Developing a new type of a storage space efficient neural network by decreasing unnecessary performance by calculating weights at runtime using a “weight function” instead of saving them. Achieving about 90% less storage and 10% higher error (depending on model)."
+        },
+        {
             "name": "Web Development",
             "img": "web_dev.png",
             "url": "http://salama-art.de/en",
             "description": "Developing a <a href='http://salama-art.de/en'>personal website</a> (see footer) or a website for a <a href='./newspaper'>school newspaper</a> as well as this very site."
         }
-    ]`;
-    return new Promise((resolve, reject)=> {
-        var request = new XMLHttpRequest();
-        request.open("GET","http://nabils.bplaced.net/projects.json");
-        request.addEventListener('load', e=> {
-           if (request.status >= 200 && request.status < 300) {
-              resolve(request.responseText);
-           } else {
-              reject(request.statusText, request.responseText);
-           }
-        });
-        request.send();
-    });    
+    ]`;   
 };
 
-const init = async ()=> {
-    const projects = JSON.parse(await getProjects());
+const init = ()=> {
+    const projects = JSON.parse(getProjects());
     for(const project of projects) {
         $('body #tiles').append(`<div class="project">
             <h3>${project.name}</h3>
