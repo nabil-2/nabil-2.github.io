@@ -67,6 +67,16 @@ span#small_dscr {
     font-size: .7em;
 }
 
+p#latest_paper {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+}
+
+p#latest_paper a {
+    color: white;
+}
+
 @media  screen and(min-width: 1000px) {
     #tiles div.project {
         width: 45%;
