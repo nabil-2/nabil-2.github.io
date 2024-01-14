@@ -3,7 +3,7 @@ const getProjects = ()=> {
         {
             "name": "Search for Dark Matter",
             "img": "dark_matter_uhh.jpg",
-            "url": "https://www.isa.uni-hamburg.de/studentischeforschungsgruppen/dunkle-materie.html",
+            "url": "https://www.isa.uni-hamburg.de/foerderungen/studentischeforschungsgruppen/dunkle-materie.html",
             "description": "A Search for Dark Matter by building a High-Frequency Cavity and utilizing Artificial Intelligence. A student research project funded by the University of Hamburg with 10,000 €. <br><br><span id='small_dscr'>Funded by the Federal Ministry of Education and Research (BMBF) and the Free and Hanseatic City of Hamburg under the Excellence Strategy of the Federal Government and the Federal States</span>"
         },
         {
