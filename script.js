@@ -25,10 +25,10 @@ const getProjects = ()=> {
             "description": "A complex reconstruction of a pandemic as Web-App using real-world actions measured by comparing plots to mathematical models."
         },
         {
-            "name": "AI Research",
+            "name": "AI Reasearch in Physics",
             "img": "research.png",
-            "url": "research",
-            "description": "Developing a new type of a storage space efficient neural network by decreasing unnecessary performance by calculating weights at runtime using a “weight function” instead of saving them. Achieving about 90% less storage and 10% higher error (depending on model)."
+            "url": "https://www.dpg-verhandlungen.de/year/2024/conference/karlsruhe/part/t/session/121/contribution/5?lang=en",
+            "description": "Automated antenna calibration and optimization of the MADMAX booster system for Dark Matter detection using Deep Learning techniques."
         },
         {
             "name": "Web Development",
@@ -38,6 +38,14 @@ const getProjects = ()=> {
         }
     ]`;   
 };
+
+
+/* {
+    "name": "AI Research",
+    "img": "research.png",
+    "url": "research",
+    "description": "Developing a new type of a storage space efficient neural network by decreasing unnecessary performance by calculating weights at runtime using a “weight function” instead of saving them. Achieving about 90% less storage and 10% higher error (depending on model)."
+} */
 
 const init = ()=> {
     const projects = JSON.parse(getProjects());
