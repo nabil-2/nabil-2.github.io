@@ -7,10 +7,10 @@ const getProjects = ()=> {
             "description": "A Search for Dark Matter by building a High-Frequency Cavity and utilizing Artificial Intelligence. A student research project funded by the University of Hamburg with 10,000 €. <br><br><span id='small_dscr'>Funded by the Federal Ministry of Education and Research (BMBF) and the Free and Hanseatic City of Hamburg under the Excellence Strategy of the Federal Government and the Federal States</span>"
         },
         {
-            "name": "Android App",
-            "img": "android.jpg",
-            "url": "android-app",
-            "description": "A calculator for various linear- and vector algebra operations, e.g. calculating a linear combination in n-dimensional space, vector operations, calculating the determinant, etc."
+            "name": "Numerical Integration Library",
+            "img": "integration.jpg",
+            "url": "https://github.com/Malta-Project/Malta",
+            "description": "Library for fast Integration of arbitrary functions in n dimensions using Monte-Carlo Integration enhanced with the VEGAS-Algorithm named Malta."
         },
         {
             "name": "Computer Vision Library<br>& Image Recognition",
@@ -31,21 +31,29 @@ const getProjects = ()=> {
             "description": "Automated antenna calibration and optimization of the MADMAX booster system for Dark Matter detection using Deep Learning techniques."
         },
         {
-            "name": "Web Development",
-            "img": "web_dev.png",
-            "url": "http://salama-art.de/en",
-            "description": "Developing a <a href='http://salama-art.de/en'>personal website</a> (see footer) or a website for a <a href='./newspaper'>school newspaper</a> as well as this very site."
+            "name": "Android App",
+            "img": "android.jpg",
+            "url": "android-app",
+            "description": "A calculator for various linear- and vector algebra operations, e.g. calculating a linear combination in n-dimensional space, vector operations, calculating the determinant, etc."
         }
     ]`;   
 };
 
 
-/* {
+/*
+{
+    "name": "Web Development",
+    "img": "web_dev.png",
+    "url": "http://salama-art.de/en",
+    "description": "Developing a <a href='http://salama-art.de/en'>personal website</a> (see footer) or a website for a <a href='./newspaper'>school newspaper</a> as well as this very site."
+}
+{
     "name": "AI Research",
     "img": "research.png",
     "url": "research",
     "description": "Developing a new type of a storage space efficient neural network by decreasing unnecessary performance by calculating weights at runtime using a “weight function” instead of saving them. Achieving about 90% less storage and 10% higher error (depending on model)."
-} */
+}
+*/
 
 const init = ()=> {
     const projects = JSON.parse(getProjects());
