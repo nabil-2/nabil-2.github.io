@@ -39,7 +39,6 @@ const getProjects = ()=> {
     ]`;   
 };
 
-
 /*
 {
     "name": "Web Development",
@@ -108,7 +107,16 @@ const init = ()=> {
             });
         });
     }
-    if(screen.width <= 800) {
-        alert("This website is not optimized for mobile viewports, please use a desktop device.");
+    if(screen.width <= 900) {
+        $('#tiles').css({
+            display: 'block'
+        });
+        $('#tiles div.project').css({
+            width: '100%',
+            height: '30%'
+        });
+        $('display').css({
+            'overflow-x': 'visible'
+        })
     }
 };

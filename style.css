@@ -76,10 +76,3 @@ p#latest_paper {
 p#latest_paper a {
     color: white;
 }
-
-@media  screen and(min-width: 1000px) {
-    #tiles div.project {
-        width: 45%;
-        overflow: auto;
-    }
-}
