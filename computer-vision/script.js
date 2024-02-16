@@ -31,7 +31,13 @@ const init = () => {
             <img src='./img/demo.png' />
         </div>
     `);
-    if(screen.width <= 800) {
-        alert("This website is not optimized for mobile viewports, please use a desktop device.");
+    if(screen.width <= 1300) {
+        $('#sections > div').css({
+            'display': 'block'
+        });
+        $('#sections > div img').css({
+            'width': '100%',
+            'height': 'auto'
+        });
     }
 }

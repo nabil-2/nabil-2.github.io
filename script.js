@@ -115,8 +115,9 @@ const init = ()=> {
             width: '100%',
             height: '30%'
         });
-        $('display').css({
-            'overflow-x': 'visible'
+        $('body').css({
+            'overflow-x': 'hidden',
+            'overflow': 'visible'
         })
     }
 };
