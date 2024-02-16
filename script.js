@@ -117,6 +117,12 @@ const init = ()=> {
         $('#tiles div.project').css({
             width: 'auto',
             height: '30%'
+        });        
+        $('div.project p').css({
+            'font-size': '2.5em'
+        });       
+        $('div.project h3').css({
+            'font-size': '3em'
         });
         $('body').css({
             'overflow-x': 'hidden',
