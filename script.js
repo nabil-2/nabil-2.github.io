@@ -60,18 +60,21 @@ const init = ()=> {
         $('body #tiles').append(`<div class="project">
             <h3>${project.name}</h3>
             <p>${project.description}</p>
-        </div>`);        
+        </div>`);
+        let descr_css = {
+            height: 0,
+            "font-size": 0,
+            opacity: 0,
+            display: 'none'
+        }
+        if(screen.width <= 900) descr_css = {}
         let height = $('div.project:last-child p').height();
         $('#tiles div.project:last-child').css({
             'background-image': `url('./img/${project.img}')`
         }).on('click', x=> {
             window.location.href = project.url;
-        }).children('p').css({
-            height: 0,
-            "font-size": 0,
-            opacity: 0,
-            display: 'none'
-        }).parent('div.project').hover(function() {
+        }).children('p').css(descr_css)
+        .parent('div.project').hover(function() {
             $(this).children('p').css({
                 display: 'block',
                 "font-size": "1.35em"
@@ -112,7 +115,7 @@ const init = ()=> {
             display: 'block'
         });
         $('#tiles div.project').css({
-            width: '100%',
+            width: 'auto',
             height: '30%'
         });
         $('body').css({
