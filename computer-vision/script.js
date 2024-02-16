@@ -10,6 +10,12 @@ const tiles = {
 };
 
 const init = () => {
+    $('#sections').append(`
+        <div class='demo'>
+            <h3>Demonstration</h3>
+            <img src='./img/demo.png' />
+        </div>
+    `);
     for(let i=0; i<tiles.title.length; i++) {
         $s = $('#sections').append(`
             <div>
@@ -25,12 +31,6 @@ const init = () => {
             height: height * 1.5
         });
     }
-    $('#sections').append(`
-        <div class='demo'>
-            <h3>Demonstration</h3>
-            <img src='./img/demo.png' />
-        </div>
-    `);
     if(screen.width <= 1300) {
         $('#sections > div').css({
             'display': 'block'
