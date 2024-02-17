@@ -19,16 +19,16 @@ const getProjects = ()=> {
             "description": "A library for training and testing a user-definded Convolutional Neuronal Network model, capable of all common techniques for supervised image classification and image preprocessing."
         },
         {
-            "name": "Simulation of a Pandemic",
-            "img": "simulation.png",
-            "url": "simulation",
-            "description": "A complex reconstruction of a pandemic as Web-App using real-world actions measured by comparing plots to mathematical models."
-        },
-        {
             "name": "AI Reasearch in Physics",
             "img": "research.png",
             "url": "https://www.dpg-verhandlungen.de/year/2024/conference/karlsruhe/part/t/session/121/contribution/5?lang=en",
             "description": "Automated antenna calibration and optimization of the MADMAX booster system for Dark Matter detection using Deep Learning techniques."
+        },
+        {
+            "name": "Simulation of a Pandemic",
+            "img": "simulation.png",
+            "url": "simulation",
+            "description": "A complex reconstruction of a pandemic as Web-App using real-world actions. Validated by comparing the simulation to mathematical models."
         },
         {
             "name": "Android App",
