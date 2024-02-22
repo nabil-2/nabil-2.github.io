@@ -31,20 +31,20 @@ const getProjects = ()=> {
             "description": "A complex reconstruction of a pandemic as Web-App using real-world actions. Validated by comparing the simulation to mathematical models."
         },
         {
-            "name": "Android App",
-            "img": "android.jpg",
-            "url": "android-app",
-            "description": "A calculator for various linear- and vector algebra operations, e.g. calculating a linear combination in n-dimensional space, vector operations, calculating the determinant, etc."
+            "name": "Web Development",
+            "img": "web_dev.png",
+            "url": "http://salama-art.de/en",
+            "description": "Developing a <a href='http://salama-art.de/en'>personal website</a> (see footer) or a website for a <a href='./newspaper'>school newspaper</a> as well as this very site."
         }
     ]`;   
 };
 
 /*
 {
-    "name": "Web Development",
-    "img": "web_dev.png",
-    "url": "http://salama-art.de/en",
-    "description": "Developing a <a href='http://salama-art.de/en'>personal website</a> (see footer) or a website for a <a href='./newspaper'>school newspaper</a> as well as this very site."
+    "name": "Android App",
+    "img": "android.jpg",
+    "url": "android-app",
+    "description": "A calculator for various linear- and vector algebra operations, e.g. calculating a linear combination in n-dimensional space, vector operations, calculating the determinant, etc."
 }
 {
     "name": "AI Research",
